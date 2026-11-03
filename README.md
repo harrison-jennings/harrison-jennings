@@ -15,19 +15,19 @@ I'm Harrison, a tech-led marketing leader in Melbourne, working across MarTech, 
 
 **[harrisonjennings.au](https://www.harrisonjennings.au/)**: my writing and projects on marketing automation, analytics and the web, updated regularly. I designed and built it from scratch in Astro on Cloudflare Workers, with its own [design system](https://design.harrisonjennings.au/) generated from the site's code. The [source](https://github.com/harrison-jennings/harrisonjennings.au) is public.
 
-[![CI Orchestrator](https://img.shields.io/github/actions/workflow/status/harrison-jennings/harrisonjennings.au/ci-orchestrator.yml?branch=main&style=flat-square&label=%F0%9F%9B%A0%EF%B8%8F%20CI%20Orchestrator&labelColor=121110)](https://github.com/harrison-jennings/harrisonjennings.au/actions/workflows/ci-orchestrator.yml)
-[![CD Orchestrator](https://img.shields.io/github/actions/workflow/status/harrison-jennings/harrisonjennings.au/cd-orchestrator.yml?branch=main&style=flat-square&label=%F0%9F%9A%80%20CD%20Orchestrator&labelColor=121110)](https://github.com/harrison-jennings/harrisonjennings.au/actions/workflows/cd-orchestrator.yml)
-[![Design system](https://img.shields.io/badge/design_system-live-C85A52?style=flat-square&labelColor=121110)](https://design.harrisonjennings.au/)
+[![CI Orchestrator](https://img.shields.io/github/actions/workflow/status/harrison-jennings/harrisonjennings.au/ci-orchestrator.yml?branch=main&style=flat-square&label=%F0%9F%9B%A0%EF%B8%8F%20CI%20Orchestrator&labelColor=3A3532)](https://github.com/harrison-jennings/harrisonjennings.au/actions/workflows/ci-orchestrator.yml)
+[![CD Orchestrator](https://img.shields.io/github/actions/workflow/status/harrison-jennings/harrisonjennings.au/cd-orchestrator.yml?branch=main&style=flat-square&label=%F0%9F%9A%80%20CD%20Orchestrator&labelColor=3A3532)](https://github.com/harrison-jennings/harrisonjennings.au/actions/workflows/cd-orchestrator.yml)
+[![Design system](https://img.shields.io/badge/design_system-live-C85A52?style=flat-square&labelColor=3A3532)](https://design.harrisonjennings.au/)
 
 **[leadlens](https://leadlens.harrisonjennings.au)**: see how a Marketo email will look across 21 simulated email clients while you write it, right inside VS Code. Problems are flagged at the exact line with one-click fixes, and it runs locally with no telemetry and no account.
 
-[![VS Code Marketplace](https://img.shields.io/badge/vs_code_marketplace-install-C85A52?style=flat-square&labelColor=121110)](https://marketplace.visualstudio.com/items?itemName=leadlens.leadlens)
-[![Open VSX](https://img.shields.io/open-vsx/v/leadlens/leadlens?style=flat-square&label=open%20vsx&labelColor=121110&color=C85A52)](https://open-vsx.org/extension/leadlens/leadlens)
+[![VS Code Marketplace](https://img.shields.io/badge/vs_code_marketplace-install-C85A52?style=flat-square&labelColor=3A3532)](https://marketplace.visualstudio.com/items?itemName=leadlens.leadlens)
+[![Open VSX](https://img.shields.io/open-vsx/v/leadlens/leadlens?style=flat-square&label=open%20vsx&labelColor=3A3532&color=C85A52)](https://open-vsx.org/extension/leadlens/leadlens)
 
 **[API reference for Marketo Engage](https://mkto-ref.harrisonjennings.au/)**: a searchable reference to five Marketo APIs, with a request builder that turns any operation into code samples and a mock response. It's generated from Adobe's published specifications and checked for changes every week. Independent project, not authorized, endorsed or sponsored by Adobe.
 
-[![Operations](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fharrison-jennings%2Fapi-reference-for-marketo-engage%2Fmain%2Freference%2Fmanifest.json&query=%24.summary.operations&label=operations&style=flat-square&labelColor=121110&color=C85A52)](https://github.com/harrison-jennings/api-reference-for-marketo-engage/blob/main/reference/README.md)
-[![Models](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fharrison-jennings%2Fapi-reference-for-marketo-engage%2Fmain%2Freference%2Fmanifest.json&query=%24.summary.models&label=models&style=flat-square&labelColor=121110&color=C85A52)](https://github.com/harrison-jennings/api-reference-for-marketo-engage/blob/main/reference/README.md)
+[![Operations](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fharrison-jennings%2Fapi-reference-for-marketo-engage%2Fmain%2Freference%2Fmanifest.json&query=%24.summary.operations&label=operations&style=flat-square&labelColor=3A3532&color=C85A52)](https://github.com/harrison-jennings/api-reference-for-marketo-engage/blob/main/reference/README.md)
+[![Models](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fharrison-jennings%2Fapi-reference-for-marketo-engage%2Fmain%2Freference%2Fmanifest.json&query=%24.summary.models&label=models&style=flat-square&labelColor=3A3532&color=C85A52)](https://github.com/harrison-jennings/api-reference-for-marketo-engage/blob/main/reference/README.md)
 
 ### latest writing
 

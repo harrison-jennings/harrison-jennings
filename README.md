@@ -15,8 +15,8 @@ I'm Harrison, a tech-led marketing leader in Melbourne, working across MarTech, 
 
 **[harrisonjennings.au](https://www.harrisonjennings.au/)**: my writing and projects on marketing automation, analytics and the web, updated regularly. I designed and built it from scratch in Astro on Cloudflare Workers, with its own [design system](https://design.harrisonjennings.au/) generated from the site's code. The [source](https://github.com/harrison-jennings/harrisonjennings.au) is public.
 
-[![CI](https://img.shields.io/github/actions/workflow/status/harrison-jennings/harrisonjennings.au/ci-orchestrator.yml?branch=main&style=flat-square&label=ci&labelColor=121110)](https://github.com/harrison-jennings/harrisonjennings.au/actions/workflows/ci-orchestrator.yml)
-[![CD](https://img.shields.io/github/actions/workflow/status/harrison-jennings/harrisonjennings.au/cd-orchestrator.yml?branch=main&style=flat-square&label=cd&labelColor=121110)](https://github.com/harrison-jennings/harrisonjennings.au/actions/workflows/cd-orchestrator.yml)
+[![CI Orchestrator](https://img.shields.io/github/actions/workflow/status/harrison-jennings/harrisonjennings.au/ci-orchestrator.yml?branch=main&style=flat-square&label=%F0%9F%9B%A0%EF%B8%8F%20CI%20Orchestrator&labelColor=121110)](https://github.com/harrison-jennings/harrisonjennings.au/actions/workflows/ci-orchestrator.yml)
+[![CD Orchestrator](https://img.shields.io/github/actions/workflow/status/harrison-jennings/harrisonjennings.au/cd-orchestrator.yml?branch=main&style=flat-square&label=%F0%9F%9A%80%20CD%20Orchestrator&labelColor=121110)](https://github.com/harrison-jennings/harrisonjennings.au/actions/workflows/cd-orchestrator.yml)
 [![Design system](https://img.shields.io/badge/design_system-live-C85A52?style=flat-square&labelColor=121110)](https://design.harrisonjennings.au/)
 
 **[leadlens](https://leadlens.harrisonjennings.au)**: see how a Marketo email will look across 21 simulated email clients while you write it, right inside VS Code. Problems are flagged at the exact line with one-click fixes, and it runs locally with no telemetry and no account.

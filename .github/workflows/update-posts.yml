@@ -1,11 +1,8 @@
 name: Update latest posts
 
-# Rewrites the latest writing section of README.md from the site's RSS feed, and
-# commits only when the posts have changed.
-#
-# This pushes straight to main, so GitHub Actions can bypass the "Require pull
-# requests" ruleset. It can't bypass "Protect main", which blocks force pushes
-# and deleting the branch.
+# Rewrites the latest writing section of README.md from the site's RSS feed. When
+# the posts have changed, it opens a pull request and merges it, because main only
+# accepts changes through pull requests, with no bypass.
 on:
   schedule:
     - cron: "0 20 * * *" # Daily, 07:00 in Melbourne (AEDT)
@@ -13,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   update:
@@ -24,13 +22,19 @@ jobs:
 
       - run: python3 scripts/update_posts.py
 
-      - name: Commit any changes
+      - name: Merge any changes through a pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           if git diff --quiet README.md; then
             echo "No new posts."
             exit 0
           fi
+          branch="automation/latest-posts-${GITHUB_RUN_ID}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
           git commit -am "Update latest posts"
-          git push
+          git push origin "$branch"
+          gh pr create --base main --head "$branch" --title "Update latest posts" --body "Automated update from the site's RSS feed."
+          gh pr merge "$branch" --squash

@@ -31,7 +31,6 @@ I'm Harrison, a tech-led marketing leader in Melbourne, working across MarTech, 
 ### latest writing
 
 <!-- posts:start -->
-- [leadlens is now on the VS Code Marketplace](https://www.harrisonjennings.au/blog/leadlens-is-now-on-the-vs-code-marketplace/)
 - [a brand that documents itself](https://www.harrisonjennings.au/blog/a-brand-that-documents-itself/)
 - [what my analytics warehouse sees that Google Analytics doesn't](https://www.harrisonjennings.au/blog/what-my-analytics-warehouse-sees-that-google-analytics-doesnt/)
 <!-- posts:end -->

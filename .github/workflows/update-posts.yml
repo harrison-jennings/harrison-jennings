@@ -38,4 +38,4 @@ jobs:
           git push origin "$branch"
           gh pr create --base main --head "$branch" --title "Update latest posts" --body "Automated update from the site's RSS feed."
           gh pr merge "$branch" --squash
-          git push origin --delete "$branch"
+          git push origin --delete "$branch" || echo "Branch was not deleted; it may already be gone."

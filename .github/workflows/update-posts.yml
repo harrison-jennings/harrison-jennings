@@ -1,0 +1,36 @@
+name: Update latest posts
+
+# Rewrites the latest writing section of README.md from the site's RSS feed, and
+# commits only when the posts have changed.
+#
+# This pushes straight to main, so GitHub Actions can bypass the "Require pull
+# requests" ruleset. It can't bypass "Protect main", which blocks force pushes
+# and deleting the branch.
+on:
+  schedule:
+    - cron: "0 20 * * *" # Daily, 07:00 in Melbourne (AEDT)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    name: update latest posts
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - run: python3 scripts/update_posts.py
+
+      - name: Commit any changes
+        run: |
+          if git diff --quiet README.md; then
+            echo "No new posts."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Update latest posts"
+          git push
